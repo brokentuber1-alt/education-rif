@@ -4,69 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Éducation pour le Rif</title>
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <!-- Swiper Carousel CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-</head>
-<body class="bg-[#D0E8F2] text-gray-800">
 
-  <!-- Hero Section -->
+  <!-- Google Font créative -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Rubik', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#FFF4E1] text-gray-800">
+
+  <!-- Hero Section avec photo -->
   <section class="relative h-[80vh]">
     <img
       src="https://inkyfada.com/wp-content/uploads/2019/02/transport-scolaire-cover-desktop-inkyfada.jpg"
       class="w-full h-full object-cover"
-      alt="Education rurale"
+      alt="Enfants en chemin vers l'école"
     />
     <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
-      <h1 class="text-white text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">L’éducation change des vies</h1>
-      <p class="text-white text-lg md:text-2xl" data-aos="fade-up" data-aos-delay="200">Offrir un avenir meilleur aux enfants du Rif</p>
-      <a href="#mission" class="mt-6 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">Découvrir notre mission</a>
+      <h1 class="text-white text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">
+        L’éducation change des vies
+      </h1>
+      <p class="text-white text-lg md:text-2xl" data-aos="fade-up" data-aos-delay="200">
+        Offrir un avenir meilleur aux enfants du Rif
+      </p>
+      <a href="#mission" class="mt-6 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+        Découvrir notre mission
+      </a>
     </div>
   </section>
 
   <!-- Header -->
-  <header class="bg-black-700 text-white p-6 text-center" data-aos="fade-down">
+  <header class="bg-green-700 text-white p-6 text-center" data-aos="fade-down">
     <h1 class="text-3xl font-bold">Éducation pour le Rif</h1>
     <p class="mt-2 text-lg">L’éducation gratuite pour un avenir meilleur</p>
   </header>
 
-  <!-- Mission -->
-  <section id="mission" class="p-6 max-w-4xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4 text-center text-green-700">Notre mission</h2>
-    <p class="text-lg text-center">
-      Offrir une éducation gratuite et accessible aux populations pauvres et marginalisées des zones rurales du Rif afin de réduire l’analphabétisme et améliorer les conditions de vie.
-    </p>
+  <!-- Mission avec image -->
+  <section id="mission" class="p-6 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6" data-aos="fade-up">
+    <img src="https://images.pexels.com/photos/154244/pexels-photo-154244.jpeg" class="w-full md:w-1/2 rounded-lg shadow-lg" alt="Mission éducative" />
+    <div>
+      <h2 class="text-3xl font-semibold mb-4 text-green-700">Notre mission</h2>
+      <p class="text-lg">
+        Offrir une éducation gratuite et accessible aux populations pauvres et marginalisées des zones rurales du Rif afin de réduire l’analphabétisme et améliorer les conditions de vie.
+      </p>
+    </div>
   </section>
 
-  <!-- Education with Carousel -->
-  <section class="bg-[#D0E8F2] text-gray-800" data-aos="fade-right">
+  <!-- Programmes éducatifs avec carrousel d’images -->
+  <section class="p-6 bg-white" data-aos="fade-right">
     <h2 class="text-3xl font-semibold mb-4 text-green-700">Programmes éducatifs</h2>
-    <!-- Swiper Carousel -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
-          <h3 class="font-bold mb-2">📘 Alphabétisation</h3>
+          <img src="https://images.pexels.com/photos/414379/pexels-photo-414379.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Alphabétisation">
+          <h3 class="font-bold mb-1">📘 Alphabétisation</h3>
           <p>Lecture et écriture pour tous.</p>
         </div>
         <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
-          <h3 class="font-bold mb-2">➕ Mathématiques de base</h3>
+          <img src="https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Mathématiques">
+          <h3 class="font-bold mb-1">➕ Mathématiques de base</h3>
           <p>Apprentissage simple et pratique.</p>
         </div>
         <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
-          <h3 class="font-bold mb-2">🌾 Agriculture durable</h3>
+          <img src="https://images.pexels.com/photos/414886/pexels-photo-414886.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Agriculture">
+          <h3 class="font-bold mb-1">🌾 Agriculture durable</h3>
           <p>Techniques modernes pour les fermiers.</p>
         </div>
         <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
-          <h3 class="font-bold mb-2">🧵 Artisanat</h3>
+          <img src="https://images.pexels.com/photos/414517/pexels-photo-414517.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Artisanat">
+          <h3 class="font-bold mb-1">🧵 Artisanat</h3>
           <p>Apprendre des métiers manuels utiles.</p>
         </div>
         <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
-          <h3 class="font-bold mb-2">💻 Bases du numérique</h3>
+          <img src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Numérique">
+          <h3 class="font-bold mb-1">💻 Bases du numérique</h3>
           <p>Compétences digitales pour tous.</p>
         </div>
       </div>
-      <!-- Swiper navigation -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination mt-4"></div>
@@ -76,22 +100,37 @@
   <!-- Opportunities -->
   <section class="p-6" data-aos="fade-left">
     <h2 class="text-3xl font-semibold mb-4 text-green-700">Opportunités</h2>
-    <ul class="space-y-3 text-lg">
-      <li>🎓 Programmes de formation gratuits</li>
-      <li>🤝 Soutien des ONG et associations</li>
-      <li>💰 Bourses et aides sociales</li>
-      <li>🙋 Volontariat et accompagnement</li>
-    </ul>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-4 bg-yellow-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+        <img src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Formation gratuite">
+        <h3 class="font-bold mb-1">🎓 Formations gratuites</h3>
+        <p>Programmes pour tous les enfants et adultes.</p>
+      </div>
+      <div class="p-4 bg-yellow-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+        <img src="https://images.pexels.com/photos/414886/pexels-photo-414886.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Bourses">
+        <h3 class="font-bold mb-1">💰 Bourses et aides</h3>
+        <p>Soutien pour les familles et les élèves.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Resources -->
-  <section class="bg-[#D0E8F2] text-gray-800" data-aos="zoom-in">
+  <section class="p-6 bg-white" data-aos="zoom-in">
     <h2 class="text-3xl font-semibold mb-4 text-green-700">Ressources</h2>
-    <ul class="space-y-3 text-lg">
-      <li>📄 Guides PDF téléchargeables</li>
-      <li>🎥 Vidéos éducatives à faible consommation internet</li>
-      <li>📚 Contenu accessible hors ligne</li>
-    </ul>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+        <img src="https://images.pexels.com/photos/414379/pexels-photo-414379.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Guides PDF">
+        <h3 class="font-bold mb-1">📄 Guides PDF</h3>
+      </div>
+      <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+        <img src="https://images.pexels.com/photos/414886/pexels-photo-414886.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Vidéos">
+        <h3 class="font-bold mb-1">🎥 Vidéos éducatives</h3>
+      </div>
+      <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+        <img src="https://images.pexels.com/photos/414517/pexels-photo-414517.jpeg" class="w-full h-40 object-cover rounded mb-2" alt="Contenu hors ligne">
+        <h3 class="font-bold mb-1">📚 Contenu hors ligne</h3>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
@@ -132,7 +171,7 @@
   <script>
     AOS.init({ duration: 1000, once: true });
   </script>
-  <!-- Swiper Carousel JS -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.mySwiper', {
@@ -147,4 +186,3 @@
 
 </body>
 </html>
-
