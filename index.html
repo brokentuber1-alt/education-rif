@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Éducation pour le Rif</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Swiper Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body class="bg-gray-50 text-gray-800">
-   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <section class="relative">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <img
-    src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
-    class="w-full h-[70vh] object-cover"
-    alt="Education rurale"
-  />
-  <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-    <h1 class="text-white text-4xl md:text-5xl font-bold text-center">
-      L’éducation change des vies
-    </h1>
-  </div>
-</section>
 
+  <!-- Hero Section -->
+  <section class="relative h-[80vh]">
+    <img
+      src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
+      class="w-full h-full object-cover"
+      alt="Education rurale"
+    />
+    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-white text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">L’éducation change des vies</h1>
+      <p class="text-white text-lg md:text-2xl" data-aos="fade-up" data-aos-delay="200">Offrir un avenir meilleur aux enfants du Rif</p>
+      <a href="#mission" class="mt-6 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">Découvrir notre mission</a>
+    </div>
+  </section>
 
   <!-- Header -->
-  <header class="bg-green-700 text-white p-6 text-center">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <header class="bg-green-700 text-white p-6 text-center" data-aos="fade-down">
     <h1 class="text-3xl font-bold">Éducation pour le Rif</h1>
     <p class="mt-2 text-lg">L’éducation gratuite pour un avenir meilleur</p>
   </header>
 
-  <!-- Home -->
-  <section class="p-6">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <section class="p-6 bg-white" data-aos="fade-up">
-  <h2 class="text-2xl font-semibold mb-4">Éducation gratuite</h2>
-  ...
-</section>
-
-    <h2 class="text-2xl font-semibold mb-2">Notre mission</h2>
-    <p>
-      Offrir une éducation gratuite et accessible aux populations pauvres et
-      marginalisées des zones rurales du Rif afin de réduire l’analphabétisme et
-      améliorer les conditions de vie.
+  <!-- Mission -->
+  <section id="mission" class="p-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4 text-center text-green-700">Notre mission</h2>
+    <p class="text-lg text-center">
+      Offrir une éducation gratuite et accessible aux populations pauvres et marginalisées des zones rurales du Rif afin de réduire l’analphabétisme et améliorer les conditions de vie.
     </p>
   </section>
 
-  <!-- Education -->
-  <section class="p-6 bg-white">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <h2 class="text-2xl font-semibold mb-4">Éducation gratuite</h2>
-    <ul class="space-y-2">
-      <li>📘 Alphabétisation (lecture et écriture)</li>
-      <li>➕ Mathématiques de base</li>
-      <li>🌾 Agriculture moderne et durable</li>
-      <li>🧵 Artisanat et métiers manuels</li>
-      <li>🧑‍💼 Création de petits projets</li>
-      <li>💻 Bases du numérique</li>
-    </ul>
+  <!-- Education with Carousel -->
+  <section class="p-6 bg-white" data-aos="fade-right">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Programmes éducatifs</h2>
+    <!-- Swiper Carousel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h3 class="font-bold mb-2">📘 Alphabétisation</h3>
+          <p>Lecture et écriture pour tous.</p>
+        </div>
+        <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h3 class="font-bold mb-2">➕ Mathématiques de base</h3>
+          <p>Apprentissage simple et pratique.</p>
+        </div>
+        <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h3 class="font-bold mb-2">🌾 Agriculture durable</h3>
+          <p>Techniques modernes pour les fermiers.</p>
+        </div>
+        <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h3 class="font-bold mb-2">🧵 Artisanat</h3>
+          <p>Apprendre des métiers manuels utiles.</p>
+        </div>
+        <div class="swiper-slide p-4 bg-green-50 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h3 class="font-bold mb-2">💻 Bases du numérique</h3>
+          <p>Compétences digitales pour tous.</p>
+        </div>
+      </div>
+      <!-- Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
   </section>
 
   <!-- Opportunities -->
-  <section class="p-6">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <h2 class="text-2xl font-semibold mb-4">Opportunités</h2>
-    <ul class="space-y-2">
-      <li>Programmes de formation gratuits</li>
-      <li>Soutien des ONG et associations</li>
-      <li>Bourses et aides sociales</li>
-      <li>Volontariat et accompagnement</li>
+  <section class="p-6" data-aos="fade-left">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Opportunités</h2>
+    <ul class="space-y-3 text-lg">
+      <li>🎓 Programmes de formation gratuits</li>
+      <li>🤝 Soutien des ONG et associations</li>
+      <li>💰 Bourses et aides sociales</li>
+      <li>🙋 Volontariat et accompagnement</li>
     </ul>
   </section>
 
   <!-- Resources -->
-  <section class="p-6 bg-white">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <h2 class="text-2xl font-semibold mb-4">Ressources</h2>
-    <ul class="space-y-2">
+  <section class="p-6 bg-white" data-aos="zoom-in">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Ressources</h2>
+    <ul class="space-y-3 text-lg">
       <li>📄 Guides PDF téléchargeables</li>
       <li>🎥 Vidéos éducatives à faible consommation internet</li>
       <li>📚 Contenu accessible hors ligne</li>
@@ -86,36 +95,56 @@
   </section>
 
   <!-- Contact -->
-  <section class="p-6">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <h2 class="text-2xl font-semibold mb-4">Aide & Contact</h2>
-    <p>Besoin d’aide ou d’informations ?</p>
-    <ul class="mt-2 space-y-1">
-      <li>📞 Téléphone</li>
-      <li>💬 WhatsApp</li>
-      <li>📝 Formulaire de contact simple</li>
+  <section class="p-6" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Aide & Contact</h2>
+    <p class="text-lg mb-3">Besoin d’aide ou d’informations ?</p>
+    <ul class="space-y-2 text-lg">
+      <li>📞 Téléphone: 21137736</li>
+      <li>💬 WhatsApp: <a href="#" class="text-green-700 underline hover:scale-105 transition">Envoyer un message</a></li>
+      <li>📝 <a href="#" class="text-green-700 underline hover:scale-105 transition">Formulaire de contact</a></li>
     </ul>
   </section>
 
   <!-- Support -->
-  <section class="p-6 bg-green-100">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <h2 class="text-2xl font-semibold mb-4">Soutenir le projet</h2>
-    <p>
-      Vous pouvez soutenir ce projet en faisant un don, en partageant le site ou
-      en participant comme bénévole.
+  <section class="p-6 bg-green-100 text-center" data-aos="flip-up">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Soutenir le projet</h2>
+    <p class="text-lg mb-4">
+      Vous pouvez soutenir ce projet en faisant un don, en partageant le site ou en participant comme bénévole.
     </p>
+    <div class="flex justify-center gap-4">
+      <a href="#" class="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 transition transform hover:scale-105">Faire un don</a>
+      <a href="#" class="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 transition transform hover:scale-105">Devenir bénévole</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4">
-     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <footer class="bg-gray-800 text-white text-center p-6" data-aos="fade-up">
     <p>© 2025 Éducation pour le Rif – Tous droits réservés</p>
+    <div class="flex justify-center gap-6 mt-3">
+      <a href="#" class="hover:text-green-400 transition">Facebook</a>
+      <a href="#" class="hover:text-green-400 transition">Instagram</a>
+      <a href="#" class="hover:text-green-400 transition">WhatsApp</a>
+    </div>
   </footer>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: true });
-</script>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <!-- Swiper Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+  </script>
 
 </body>
 </html>
+
